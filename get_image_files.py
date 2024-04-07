@@ -19,5 +19,5 @@ def convert_to_npy(img_list):
         np.save(npy_name, data)
 
 
-img_list = glob.glob("ucsf_raw_data/masks_validate/*.nii")
+img_list = glob.glob("raw_data/*/*.nii")
 convert_to_npy(img_list)
