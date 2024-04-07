@@ -67,9 +67,9 @@ def load_img_msk(img_list):
                     img_g = image[i*64+32:(i+1)*64+32, j*64+32:(j+1)*64+32, k*64+32:(k+1)*64+32]
 
                     if msk_g.sum() > 0:
-                        save_dir = "grid_data/cancer1"
+                        save_dir = "grid_data/cancer"
                     else:
-                        save_dir = "grid_data/cancer0"
+                        save_dir = "grid_data/non_cancer"
 
                     msk_save_name = msk_name.replace(".npy", f"_{i}_{j}_{k}_h.npy")
                     msk_save_name = msk_save_name.replace("raw_data", save_dir)
